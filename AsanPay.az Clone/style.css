@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 225, 225);
+}
+.header-con{
+    background-color: rgb(14, 14, 138);
+}
+.myRow{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(6, 13%);
+    gap: 1rem;
+}
+.myBox{
+    background-color: #fff;
+    padding: 0;
+}
+.myBox span:nth-child(1){
+    font-size: 13px;
+}
+.myBox span:nth-child(2){
+    font-size: 15px;
+}
+.moreCon{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 20%);
+    gap: 0.8rem;
+}
+.moreCon div{
+    font-size: 14px;
+}
+.left a, span{
+    font-size: 13px;
+}
+.right img{
+    max-width: 150px;
+    height: auto;
+}
+.myFixed{
+    width: 280px;
+    transform: translateX(200px);
+    padding: 0;
+    height: 80px;
+    color: #fff;
+    right: 0;
+    bottom: 20px;
+    transition: 500ms all;
+}
+.myFixed:hover{
+    transform: translateX(0);
+}
+.myFixed span:nth-child(1){
+    font-size: 13px;
+}
+.myFixed span:nth-child(2){
+    font-size: 9px;
+}
+.myFixed i{
+    font-size: 34px;
+    margin: 10px 0;
+}
+.myFixed div:nth-child(1){
+    width: 80px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.myFixed a{
+    font-size: 10px;
+    margin: 0 1px;
+}
+@media screen and (max-width: 992px ) {
+    .myRow{
+        grid-template-columns: repeat(3, 25%);
+    }
+}
+@media screen and (max-width: 578px) {
+    .myRow{
+        grid-template-columns: repeat(1, 100%);
+    }    
+    .moreCon{
+        grid-template-columns: repeat(1, 90%);
+    }
+}
